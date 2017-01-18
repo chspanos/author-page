@@ -34,21 +34,24 @@
 
       <div class="publications">
         <h3>Published Stories</h3>
-        <ul>
+        <ul data-bind="foreach: publicationList">
           <li>
-            <span class="story-title">Growing Feathers</span>,
-            <span class="publisher">Stories for Children Magazine</span>,
-            <span class="date">February 2010</span>
+            <span class="story-title" data-bind="text: title"></span>,
+            <span class="publisher" data-bind="text: publisher"></span>,
+            <span class="date" data-bind="text: date"></span>
           </li>
         </ul>
       </div>
-      <div class="image-carousel">
-        <img class="pub-image" src="images/SFC-Feb2010-150.jpg" alt="cover image">
+      <div class="image-carousel" data-bind="with: currentStory">
+        <img class="pub-image" src="" alt="cover image" data-bind="attr: {src: cover}">
       </div>
 
       <footer>
         <p>Copyright 2017 Cheryl Spanos</p>
       </footer>
     </div>
+    <script src="js/lib/knockout.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/viewmodel.js"></script>
   </body>
 </html>
