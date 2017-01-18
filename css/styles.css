@@ -1,0 +1,125 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e0e0e0;
+}
+
+header {
+  width: 100%;
+  background-color: #5c6bc0;
+}
+
+.logo {
+  float: left;
+  margin: 20px;
+}
+
+.title {
+  text-align: right;
+  float: right;
+  margin-right: 20px;
+}
+
+h1, h2 {
+  font-weight: 300;
+}
+
+nav {
+  width: 100%;
+  line-height: 2.5;
+  background-color: #9fa8da;
+}
+
+nav a, button {
+  min-width: 48px;
+  min-height: 48px;
+  padding: 1em;
+}
+
+img, embed, object, video {
+  max-width: 100%;
+}
+
+.welcome-img {
+  width: 100%;
+  text-align: center;
+}
+
+.welcome-msg {
+  width: 100%;
+  text-align: left;
+}
+
+.publications {
+  width: 100%;
+}
+
+.image-carousel {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .welcome-img, .welcome-msg {
+    width: 50%;
+  }
+  .publications {
+    width: 60%;
+  }
+  .image-carousel {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.hero {
+  width: 300px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 375px) {
+  .hero {
+    width: 350px;
+  }
+  nav a {
+    padding: 1.5em;
+  }
+}
+
+.pub-image {
+  border: 3px solid black;
+  padding: 20px;
+  background-color: white;
+}
+
+h3, p {
+  padding-left: 20px;
+}
+
+.story-title {
+  text-transform: uppercase;
+}
+
+.publisher {
+  font-style: italic;
+}
+
+footer {
+  width: 100%;
+  background-color: #5c6bc0;
+  text-align: right;
+  padding-right: 20px;
+}
