@@ -46,7 +46,8 @@ var publications = {
   ]
 };
 
-var Story = function(data) {
+var Story = function(data, index) {
+  this.index = index;
   this.title = ko.observable(data.title);
   this.publisher = ko.observable(data.publisher);
   this.date = ko.observable(data.date);

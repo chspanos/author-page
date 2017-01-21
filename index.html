@@ -43,7 +43,9 @@
         </ul>
       </div>
       <div class="image-carousel" data-bind="with: currentStory">
+        <button data-bind="click: $parent.previousCover"><</button>
         <img class="pub-image" src="" alt="cover image" data-bind="attr: {src: cover}">
+        <button data-bind="click: $parent.nextCover">></button>
       </div>
 
       <footer>
