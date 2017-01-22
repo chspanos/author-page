@@ -10,6 +10,8 @@ var ViewModel = function() {
 
   this.currentStory = ko.observable( self.publicationList()[0] );
 
+  this.featuredStory = new Feature(featured);
+
   // nextCover function advances to the next cover on the Publication List.
   // Activated by a click on the forward button.
   this.nextCover = function() {

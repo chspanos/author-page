@@ -48,8 +48,16 @@
         <button data-bind="click: $parent.nextCover">></button>
       </div>
 
+      <div class="featured-story" data-bind="with: featuredStory">
+        <h3>Featured Story</h3>
+        <p class="fs-title" data-bind="text: title"></p>
+        <p class="fs-author">By <span data-bind="text: author"></span></p>
+        <p class="fs-excerpt" data-bind="text: excerpt"></p>
+        <p>Read the full story <a href="" data-bind="attr: {href: link}">here</a>.</p>
+      </div>
+
       <footer>
-        <p>Copyright 2017 Cheryl Spanos</p>
+        <p>Copyright &copy; 2017 Cheryl Spanos</p>
       </footer>
     </div>
     <script src="js/lib/knockout.js"></script>

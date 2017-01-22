@@ -54,6 +54,21 @@ var Story = function(data, index) {
   this.cover = ko.observable(data.cover);
 };
 
+// Featured Story
+var featured = {
+  "title": "Bones in the Cellar",
+  "author": "Cheryl Spanos",
+  "excerpt": "Finn's baggy trousers hadn't been able to hide his trembling knees. But no one called an O'Reilly a coward. Finn had bristled and accepted the challenge. Wherever Finn went, Ida followed. She'd had to accept the dare, too. Family honor depended on it.",
+  "link": "http://hungermtn.org/bones-in-the-cellar/"
+};
+
+var Feature = function(data) {
+  this.title = ko.observable(data.title);
+  this.author = ko.observable(data.author);
+  this.excerpt = ko.observable(data.excerpt);
+  this.link = ko.observable(data.link);
+};
+
 // Awards
 var awards = {
   "awards": [{

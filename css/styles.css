@@ -66,6 +66,10 @@ img, embed, object, video {
   text-align: center;
 }
 
+.featured-story {
+  width: 100%;
+}
+
 @media screen and (min-width: 500px) {
   .welcome-img, .welcome-msg {
     width: 50%;
@@ -116,8 +120,12 @@ img, embed, object, video {
   vertical-align: 115px;
 }
 
-h3, p {
-  padding-left: 20px;
+h3, h4, p {
+  padding: 0 20px;
+}
+
+li {
+  padding-right: 20px;
 }
 
 .story-title {
@@ -125,6 +133,14 @@ h3, p {
 }
 
 .publisher {
+  font-style: italic;
+}
+
+.fs-title {
+  text-transform: uppercase;
+}
+
+.fs-author {
   font-style: italic;
 }
 
