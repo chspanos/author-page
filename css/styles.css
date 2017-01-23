@@ -57,6 +57,16 @@ img, embed, object, video {
   text-align: left;
 }
 
+.about-img {
+  width: 100%;
+  text-align: center;
+}
+
+.about-msg {
+  width: 100%;
+  text-align: left;
+}
+
 .publications {
   width: 100%;
 }
@@ -85,6 +95,9 @@ img, embed, object, video {
 
 @media screen and (min-width: 625px) {
   .publications, .image-carousel {
+    width: 50%;
+  }
+  .about-img, .about-msg {
     width: 50%;
   }
   .logo {
@@ -118,6 +131,14 @@ img, embed, object, video {
   nav a {
     padding: 1.5em;
   }
+}
+
+.author-image {
+  width: 250px;
+  padding: 20px;
+  background-color: white;
+  border: 3px solid black;
+  margin-top: 40px;
 }
 
 .pub-image {
