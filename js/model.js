@@ -48,13 +48,15 @@ var publications = {
 
 var Story = function(data, index) {
   this.index = index;
-  this.title = ko.observable(data.title);
-  this.publisher = ko.observable(data.publisher);
-  this.date = ko.observable(data.date);
-  this.cover = ko.observable(data.cover);
+  this.title = data.title;
+  this.publisher = data.publisher;
+  this.date = data.date;
+  this.cover = data.cover;
 };
 
 // Featured Story
+// TODO: Currently this is set up as a single entry, but it could be
+// expanded in the future to an array of entries, which could be selected.
 var featured = {
   "title": "Bones in the Cellar",
   "author": "Cheryl Spanos",
@@ -63,13 +65,15 @@ var featured = {
 };
 
 var Feature = function(data) {
-  this.title = ko.observable(data.title);
-  this.author = ko.observable(data.author);
-  this.excerpt = ko.observable(data.excerpt);
-  this.link = ko.observable(data.link);
+  this.title = data.title;
+  this.author = data.author;
+  this.excerpt = data.excerpt;
+  this.link = data.link;
 };
 
 // Awards
+// TODO: This data could be used to populate an additional section or
+// another page on the navigation menu
 var awards = {
   "awards": [{
       "title": "Tougher Than Dragon Hide",
@@ -112,6 +116,7 @@ var awards = {
 };
 
 // Novels - completed or WIP
+// TODO: This section yet to be completed.
 var novels = {
   "novels": [{
       "title": "Tougher Than Dragon Hide",
@@ -123,7 +128,7 @@ var novels = {
       "description": ""
     },{
       "title": "Unmarked",
-      "genre": "YA fantasy",
+      "genre": "YA fantasy/sci-fi",
       "description": ""
     }
   ]

@@ -2,15 +2,18 @@
 var ViewModel = function() {
   var self = this;
 
+  // Create observable array of published stories with which to populate DOM
   this.publicationList = ko.observableArray([]);
 
   publications.stories.forEach(function(storyItem, index){
     self.publicationList.push(new Story(storyItem, index));
   });
 
+  // Current story for display in immage carousel
   this.currentStory = ko.observable( self.publicationList()[0] );
 
-  this.featuredStory = new Feature(featured);
+  // Featured story data for display in featured story section
+  this.featuredStory = ko.observable(new Feature(featured));
 
   // nextCover function advances to the next cover on the Publication List.
   // Activated by a click on the forward button.
@@ -27,7 +30,7 @@ var ViewModel = function() {
   };
 
   // previousCover function displays the previous cover on the Publication List.
-  // Activated by the reverse button.
+  // Activated by click on the reverse button.
   this.previousCover = function() {
     // get the index of the current Story
     var index = self.currentStory().index;
