@@ -6,6 +6,7 @@
     <title>About Page</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
   </head>
   </body>
     <div class="container">
@@ -14,13 +15,15 @@
           <img src="images/pen-logo.png" alt="pen logo">
         </div>
         <div class="title">
-          <h1>Cheryl Harkness Spanos</h1>
+          <h1>Cheryl Spanos</h1>
           <h2>Young Adult/Children's Fiction Writer</h2>
         </div>
       </header>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <ul class="menu-box">
+          <li class="menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item"><a href="about.html">About</a></li>
+        </ul>
       </nav>
 
       <div class="about-img">
@@ -32,15 +35,16 @@
       </div>
 
       <nav>
-        <a href="https://writersotj.wordpress.com">Writers on the Journey Blog</a>
+        <ul class="menu-box">
+          <li class="menu-item">
+            <a class="fa-wordpress" href="https://writersotj.wordpress.com" target="blank">Writers on the Journey Blog</a>
+          </li>
+        </ul>
       </nav>
 
       <footer>
         <p>Copyright &copy; 2017 Cheryl Spanos</p>
       </footer>
     </div>
-    <script src="js/lib/knockout.js"></script>
-    <script src="js/model.js"></script>
-    <script src="js/viewmodel.js"></script>
   </body>
 </html>
