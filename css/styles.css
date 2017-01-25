@@ -47,21 +47,12 @@ nav a, button {
 }
 
 .menu-box {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  flex-wrap: wrap;
   list-style-type: none;
   padding-left: 0;
 }
 
 .menu-item {
-  display: list-item;
+  display: inline;
 }
 
 img, embed, object, video {
