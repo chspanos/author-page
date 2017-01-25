@@ -5,6 +5,10 @@ body {
 
 .container {
   width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   background-color: #e0e0e0;
@@ -43,7 +47,13 @@ nav a, button {
 }
 
 .menu-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   flex-wrap: wrap;
   list-style-type: none;
@@ -99,8 +109,6 @@ img, embed, object, video {
   }
   .welcome-msg {
     width: 50%;
-    /* height: 345px;
-    overflow: auto; */
   }
 }
 
