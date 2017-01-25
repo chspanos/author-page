@@ -99,8 +99,8 @@ img, embed, object, video {
   }
   .welcome-msg {
     width: 50%;
-    height: 345px;
-    overflow: auto;
+    /* height: 345px;
+    overflow: auto; */
   }
 }
 
@@ -142,6 +142,17 @@ img, embed, object, video {
   nav a {
     padding: 1.5em;
   }
+}
+
+#welcome-text.abbrev {
+  height: 250px;
+  overflow: hidden;
+  margin-top: -1em;
+}
+
+#read-btn {
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .author-image {

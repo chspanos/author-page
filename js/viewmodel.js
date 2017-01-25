@@ -2,6 +2,25 @@
 var ViewModel = function() {
   var self = this;
 
+  // Variable to monitor length of welcome message
+  this.shortMsg = ko.observable(true);
+
+  // Toggle function to show more (or less) text, when Read button is clicked
+  this.toggleMore = function() {
+    this.shortMsg( !this.shortMsg() );
+  };
+
+  // computed function to update Read button label.
+  // Button should be labeled "Read more" when the abbreviated message is
+  // displayed and "Read less" when the full message is displayed.
+  this.buttonLabel = ko.computed(function() {
+    if (this.shortMsg()) {
+      return "Read more";
+    } else {
+      return "Read less";
+    }
+  }, this);
+
   // Create observable array of published stories with which to populate DOM
   this.publicationList = ko.observableArray([]);
 

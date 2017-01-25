@@ -31,8 +31,11 @@
       </div>
       <div class="welcome-msg">
         <h3>Welcome</h3>
-        <p>My love of fantasy and fiction began in the fifth grade with a furry-toed Halfling named Bilbo Baggins. Bilbo’s travels took him <em>There and Back Again</em>. I went with him, but never came back. My next summers were filled with Frodo’s adventures, as my siblings and I fought over installments of <em>The Lord of the Rings</em>. From there, reading transported me to other worlds, those of the Bronte sisters, Jane Austen, Dickens, and Dumas.</p>
-        <p>The birth of my own children brought with it the opportunity to pass a love of books down to the next generation. Together, we have thrilled at the perils of Harry Potter and the good creatures of Redwall Abbey. I snooped through the books they selected from the library, nabbing them for a quick read as one caught my fancy. Don’t expect to find me browsing titles in the “grown-up” section of a bookstore either. You’ll most likely find me in the Young Reader and Young Adult sections, scouting for finds among the stacks like a Niffler sniffing out bright, shiny objects.</p>
+        <div id="welcome-text" data-bind="css: {abbrev: shortMsg}">
+          <p>My love of fantasy and fiction began in the fifth grade with a furry-toed Halfling named Bilbo Baggins. Bilbo’s travels took him <em>There and Back Again</em>. I went with him, but never came back. My next summers were filled with Frodo’s adventures, as my siblings and I fought over installments of <em>The Lord of the Rings</em>. From there, reading transported me to other worlds, those of the Bronte sisters, Jane Austen, Dickens, and Dumas.</p>
+          <p>The birth of my own children brought with it the opportunity to pass a love of books down to the next generation. Together, we have thrilled at the perils of Harry Potter and the good creatures of Redwall Abbey. I snooped through the books they selected from the library, nabbing them for a quick read as one caught my fancy. Don’t expect to find me browsing titles in the “grown-up” section of a bookstore either. You’ll most likely find me in the Young Reader and Young Adult sections, scouting for finds among the stacks like a Niffler sniffing out bright, shiny objects.</p>
+        </div>
+        <input id="read-btn" type="button" value="" data-bind="click: toggleMore, attr: {value: buttonLabel}">
       </div>
 
       <div class="publications">
